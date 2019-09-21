@@ -9,9 +9,11 @@ class Deck extends Component {
         super(props);
         this.state = {
             deck: null,
-            drawn: []
+            drawn: [],
+            remainCards: 52
         };
         this.getCard = this.getCard.bind(this);
+        this.cardReset = this.cardReset.bind(this);
     };
 
     async componentDidMount() {
@@ -19,6 +21,7 @@ class Deck extends Component {
         this.setState({
             deck: deck.data
         })
+        console.log(deck)
     };
 
     async getCard() {
@@ -38,7 +41,8 @@ class Deck extends Component {
                     {
                         id: card.code,
                         image: card.image,
-                        name: `${card.value} of ${card.suit}`
+                        name: `${card.value} of ${card.suit}`,
+                        remainCards: this.state.remainCards--
                     }
                 ]
             }))
@@ -46,6 +50,15 @@ class Deck extends Component {
             alert(err);
         }
         
+    }
+
+    async cardReset() {
+        let deck = await axios.get(`${BASE_API_URL}/new/shuffle/`);
+        this.setState({
+            deck: deck.data,
+            drawn: [],
+            remainCards: 52
+        })
     }
 
     render() {
@@ -56,7 +69,11 @@ class Deck extends Component {
             <div>
                 <h1 className="Deck-title">Card Dealer</h1>
                 <h2 className="Deck-title sub-title">A little 52 cards demo made with ReactJS</h2>
-                <button className="Deck-btn" onClick={this.getCard}>Get Card!</button>
+                <div>
+                    <button className="Deck-btn" onClick={this.getCard}>Get Card!</button>
+                    <button className="Deck-btn cardreset" onClick={this.cardReset}>Reset</button>
+                </div>
+                <h4 className="Deck-remaincards">Cards Remaining: {this.state.remainCards}</h4>
                 <div className="Deck-cardarea">
                     {cards}
                 </div>
