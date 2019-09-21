@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-card-dealer/static/css/main.9e33d7e8.chunk.css",
-    "main.js": "/react-card-dealer/static/js/main.ef7bb83c.chunk.js",
-    "main.js.map": "/react-card-dealer/static/js/main.ef7bb83c.chunk.js.map",
+    "main.css": "/react-card-dealer/static/css/main.d42a2b19.chunk.css",
+    "main.js": "/react-card-dealer/static/js/main.651d7bd4.chunk.js",
+    "main.js.map": "/react-card-dealer/static/js/main.651d7bd4.chunk.js.map",
     "runtime-main.js": "/react-card-dealer/static/js/runtime-main.c982d9f7.js",
     "runtime-main.js.map": "/react-card-dealer/static/js/runtime-main.c982d9f7.js.map",
-    "static/js/2.9f042fff.chunk.js": "/react-card-dealer/static/js/2.9f042fff.chunk.js",
-    "static/js/2.9f042fff.chunk.js.map": "/react-card-dealer/static/js/2.9f042fff.chunk.js.map",
+    "static/js/2.02489435.chunk.js": "/react-card-dealer/static/js/2.02489435.chunk.js",
+    "static/js/2.02489435.chunk.js.map": "/react-card-dealer/static/js/2.02489435.chunk.js.map",
     "index.html": "/react-card-dealer/index.html",
-    "precache-manifest.40e1f7c36b359993d20ca73b81c84014.js": "/react-card-dealer/precache-manifest.40e1f7c36b359993d20ca73b81c84014.js",
+    "precache-manifest.d4f360101655979b1b68598c6744ed91.js": "/react-card-dealer/precache-manifest.d4f360101655979b1b68598c6744ed91.js",
     "service-worker.js": "/react-card-dealer/service-worker.js",
-    "static/css/main.9e33d7e8.chunk.css.map": "/react-card-dealer/static/css/main.9e33d7e8.chunk.css.map"
+    "static/css/main.d42a2b19.chunk.css.map": "/react-card-dealer/static/css/main.d42a2b19.chunk.css.map"
   }
 }
